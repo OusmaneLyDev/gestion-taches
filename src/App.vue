@@ -1,16 +1,18 @@
 <script setup>
 import { RouterLink, RouterView } from 'vue-router'
-import HelloWorld from './components/Projets.vue'
+import navbar from './components/Navbar.vue'
+// import formulaire from './components/projets/Projets.vue'
 </script>
 
 <template>
+  <navbar/>
+  <h1>Welcome</h1>
   <header>
       <nav>
-        <RouterLink to="./components/Projets">Taches</RouterLink>
-        <RouterLink to="./components/Taches">Projets</RouterLink>
+        <RouterLink to="/taches"><li>Taches</li></RouterLink>
+        <RouterLink to="/projets"><li>Projets</li></RouterLink>
       </nav>
   </header>
-
   <RouterView />
 </template>
 
