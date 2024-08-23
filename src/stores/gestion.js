@@ -1,24 +1,13 @@
 import { ref, computed } from 'vue'
 import { defineStore } from 'pinia'
 
-
-// export const useCounterStore = defineStore('counter', () => {
-//   const count = ref(0)
-//   const doubleCount = computed(() => count.value * 2)
-//   function increment() {
-//     count.value++
-//   }
-
-//   return { count, doubleCount, increment }
-// })
-
 export const useProjectStore = defineStore('projectStore', {
   state: () => ({
     projects: [],
   }),
   actions: {
     addProject(project) {
-      project.id = Date.now(); // Exemple de génération d'ID
+      project.id = Date.now();
       this.projects.push(project);
     },
     updateProject(updatedProject) {
@@ -31,5 +20,28 @@ export const useProjectStore = defineStore('projectStore', {
     getProjectById(id) {
       return this.projects.find(project => project.id === id);
     }
+  },
+});
+export const useTaskStore = defineStore("taskStore", {
+  state: () => ({
+    tasks: [],
+  }),
+  actions: {
+    addTask(task) {
+      this.tasks.push(task);
+      console.log("Task added:", task);
+    },
+
+    removeTask(index) {
+      if (index >= 0 && index < this.tasks.length) {
+        this.tasks.splice(index, 1);
+        console.log("Tache supprimer à l'index:", index);
+      }
+    },
+
+    clearTasks() {
+      this.tasks = [];
+      console.log("All tasks cleared");
+    },
   },
 });
