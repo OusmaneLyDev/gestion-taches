@@ -6,8 +6,7 @@ import navbar from './components/Navbar.vue'
 
 <template>
   <navbar/>
-  <h1>Welcome</h1>
-  <header>
+    <header>
       <nav>
         <RouterLink to="/taches"><li>Taches</li></RouterLink>
         <RouterLink to="/projets"><li>Projets</li></RouterLink>

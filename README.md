@@ -1,30 +1,73 @@
-# taches_app
+Titre du projet
 
-This template should help get you started developing with Vue 3 in Vite.
+Gestion des Tâches et des Projets
 
-## Recommended IDE Setup
+Description
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+Ce projet est une application web développée en Vue.js 3 pour gérer les tâches et les projets. Il permet de créer, lire, mettre à jour, et supprimer des tâches et des projets, tout en assurant une gestion d'état efficace avec Pinia et une navigation fluide grâce à Vue Router.
+Fonctionnalités
 
-## Customize configuration
+    Tâches
+        Ajouter une nouvelle tâche.
+        Lister toutes les tâches.
+        Voir les détails d'une tâche.
+        Mettre à jour une tâche.
+        Supprimer une tâche.
 
-See [Vite Configuration Reference](https://vitejs.dev/config/).
+    Projets
+        Ajouter un nouveau projet.
+        Lister tous les projets.
+        Voir les détails d'un projet.
+        Mettre à jour un projet.
+        Supprimer un projet.
 
-## Project Setup
+Technologies utilisées
 
-```sh
+    Vue.js 3: Framework JavaScript pour créer des interfaces utilisateur interactives.
+    Pinia: Gestionnaire d'état pour Vue.js, remplaçant de Vuex.
+    Vue Router: Bibliothèque de routage pour Vue.js.
+    Bootstrap: Framework CSS pour la stylisation.
+
+Prérequis
+
+    Node.js (version 16 ou supérieure)
+    Vue CLI
+
+Installation
+
+    Clonez le dépôt:
+
+    bash
+
+git clone https://github.com/Ehya-Ag/gestion-taches.git
+cd gestion-taches
+
+Installez les dépendances:
+
+bash
+
 npm install
-```
 
-### Compile and Hot-Reload for Development
+Lancez l'application en mode développement:
 
-```sh
-npm run dev
-```
+bash
 
-### Compile and Minify for Production
+    npm run serve
 
-```sh
-npm run build
-```
-# gestion-taches
+
+Structure du projet
+
+    src/components/: Composants Vue.js utilisés pour les tâches et les projets.
+    src/stores/: Contient les stores Pinia.
+    src/router/: Configuration des routes de l'application.
+    public/: Fichiers statiques et index.html.
+
+Utilisation
+
+    Tâches: Ajouter, modifier, supprimer, et voir les détails des tâches via l'interface.
+    Projets: Gérer les projets de manière similaire aux tâches.
+    Navigation: Utilisez la barre de navigation pour accéder aux sections "Tâches" et "Projets".
+
+Contributeurs
+
+    Ethman Ly &  Ehya Agg
