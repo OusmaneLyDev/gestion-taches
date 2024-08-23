@@ -1,9 +1,7 @@
 <script setup>
 import { RouterLink, RouterView } from 'vue-router'
 import navbar from './components/Navbar.vue'
-// import formulaire from './components/projets/Projets.vue'
 </script>
-
 <template>
   <navbar/>
     <header>
